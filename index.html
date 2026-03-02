@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURELEX - Your Health, Our Priority</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img class="logo" src="logo.png" alt="">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="login-btn" id="loginBtn">
+                    <i class="fas fa-user"></i> Login
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><button class="login-btn-mobile" id="loginBtnMobile">Login</button></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Health, Our <span>Priority</span></h1>
+            <p class="hero-subtitle">Advanced healthcare solutions connecting patients with expert doctors for better diagnosis and treatment.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="getStartedBtn">
+                    Get Started <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary" id="learnMoreBtn">
+                    Learn More
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Patients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Doctors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Hospitals</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="hero-card-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Expert Doctors</h3>
+                <p>Connect with specialists</p>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Easy Appointments</h3>
+                <p>Book in minutes</p>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-icon">
+                    <i class="fas fa-file-medical-alt"></i>
+                </div>
+                <h3>Digital Records</h3>
+                <p>Your health, secured</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2>About <span>CURELEX</span></h2>
+            <p>Revolutionizing healthcare through technology</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>At CURELEX, we believe that quality healthcare should be accessible to everyone. Our platform bridges the gap between patients and healthcare providers, making medical consultation simpler, faster, and more efficient.</p>
+                
+                <h3>Our Vision</h3>
+                <p>To become the leading digital healthcare platform, transforming how people access medical care globally by leveraging cutting-edge technology and compassionate service.</p>
+                
+                <h3>Healthcare Services</h3>
+                <ul class="services-list">
+                    <li><i class="fas fa-check-circle"></i> Online Consultation</li>
+                    <li><i class="fas fa-check-circle"></i> Appointment Booking</li>
+                    <li><i class="fas fa-check-circle"></i> Medical Records Management</li>
+                    <li><i class="fas fa-check-circle"></i> Prescription Tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Follow-up Reminders</li>
+                </ul>
+            </div>
+            <div class="about-visual">
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h4>Patient-Centered Care</h4>
+                    <p>Your health is our top priority</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Secure & Private</h4>
+                    <p>Your data is protected</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>24/7 Availability</h4>
+                    <p>Healthcare when you need it</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Pan-India Network</h4>
+                    <p>Connected across states</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Our <span>Services</span></h2>
+            <p>Comprehensive healthcare solutions</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>General Medicine</h3>
+                <p>Primary healthcare consultation for common ailments and preventive care.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-heart"></i>
+                <h3>Cardiology</h3>
+                <p>Heart health monitoring and expert cardiac consultations.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Specialized care for neurological conditions and brain health.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Bone and joint care with expert orthopedic specialists.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-baby"></i>
+                <h3>Pediatrics</h3>
+                <p>Complete healthcare solutions for infants and children.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Vaccination</h3>
+                <p>Complete immunization services for all age groups.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported By Section -->
+    <section class="supported-by" id="supported">
+        <div class="section-header">
+            <h2>Supported <span>By</span></h2>
+            <p>Our esteemed partners in innovation</p>
+        </div>
+        <div class="supported-container">
+            <div class="supported-card">
+                <div class="supported-image">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>IIIT Allahabad</h3>
+                <p>Indian Institute of Information Technology</p>
+                <span class="supported-location">Prayagraj, Uttar Pradesh</span>
+            </div>
+            <div class="supported-card">
+                <div class="supported-image">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Startup & Incubation Cell</h3>
+                <p>United University</p>
+                <span class="supported-location">Supporting Innovation</span>
+            </div>
+            <div class="supported-card">
+                <div class="supported-image">
+                    <i class="fas fa-globe-asia"></i>
+                </div>
+                <h3>Asian Institute of Technology</h3>
+                <p>AIT Bangkok</p>
+                <span class="supported-location">Bangkok, Thailand</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Contact <span>Us</span></h2>
+            <p>We'd love to hear from you</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Address</h4>
+                        <p>IIIT Allahabad Incubation Centre (IIIC)<br>Devghat, Jhalwa, Prayagraj, Uttar<br>Pradesh, 211015</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>info.curelex@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+91 788 089 4345</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/curelex-healthtech/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/curelexofficial?utm_source=qr&igsh=MWNobGQzMHdhdTRpNg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <div class="map-placeholder"> 
+                    <iframe
+                        src="https://www.google.com/maps?q=IIIT+Allahabad+Incubation+Centre+Devghat+Jhalwa+Prayagraj+211015&output=embed"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="#" class="logo">
+                <img class="logo" src="logo.png" alt="">
+            </a>
+                <p>Your trusted healthcare partner</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CURELEX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="loginModalClose">&times;</button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="patient-login">Patient</button>
+                <button class="auth-tab" data-tab="doctor-login">Doctor</button>
+            </div>
+            
+            <!-- Patient Login -->
+            <div class="auth-form active" id="patient-login">
+                <h2>Patient Login</h2>
+                <form id="patientLoginForm">
+                    <div class="form-group">
+                        <label for="patientEmail">Email ID</label>
+                        <input type="email" id="patientEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientPassword">Password</label>
+                        <input type="password" id="patientPassword" placeholder="Enter your password">
+<button onclick="patientPassword.type = patientPassword.type==='password'?'text':'password'">
+Show / Hide
+</button>
+                    </div>
+                    <div class="form-footer">
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                </form>
+                <p class="auth-switch">
+                    Don't have an account? 
+                    <a href="#" id="patientSignUpLink">Sign Up</a>
+                </p>
+            </div>
+            
+            <!-- Doctor Login -->
+            <div class="auth-form" id="doctor-login">
+                <h2>Doctor Login</h2>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Doctor accounts require admin approval before first login.</p>
+                </div>
+                <form id="doctorLoginForm">
+                    <div class="form-group">
+                        <label for="doctorEmail">Email ID</label>
+                        <input type="email" id="doctorEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorPassword">Password</label>
+                        <input type="password" id="doctorPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                </form>
+                <p class="auth-switch">
+                    New doctor? 
+                    <a href="#" id="doctorSignUpLink">Register Here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patient Sign Up Modal -->
+    <div class="modal" id="patientSignUpModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-large">
+            <button class="modal-close" id="patientSignUpModalClose">&times;</button>
+            <div class="auth-header">
+                <h2>Patient Registration</h2>
+                <p>Create your account to get started</p>
+            </div>
+            <form id="patientSignUpForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="patientFullName">Full Name *</label>
+                        <input type="text" id="patientFullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientAge">Age *</label>
+                        <input type="number" id="patientAge" placeholder="Enter your age" min="1" max="150" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientGender">Gender *</label>
+                        <select id="patientGender" required>
+                            <option value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientMobile">Mobile Number *</label>
+                        <input type="tel" id="patientMobile" placeholder="Enter mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientEmailSignup">Email ID *</label>
+                        <input type="email" id="patientEmailSignup" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientAddress">Address *</label>
+                        <input type="text" id="patientAddress" placeholder="Enter your address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientEmergency">Emergency Contact *</label>
+                        <input type="tel" id="patientEmergency" placeholder="Emergency contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientAadhaar">Aadhaar Number *</label>
+                        <input type="text" id="patientAadhaar" placeholder="Enter 12-digit Aadhaar" maxlength="12" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientCreatePassword">Create Password *</label>
+                        <input type="password" id="patientCreatePassword" placeholder="Create password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientConfirmPassword">Confirm Password *</label>
+                        <input type="password" id="patientConfirmPassword" placeholder="Confirm password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Register</button>
+            </form>
+            <p class="auth-switch">
+                Already have an account? 
+                <a href="#" id="patientSignInLink">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Doctor Sign Up Modal -->
+    <div class="modal" id="doctorSignUpModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-large">
+            <button class="modal-close" id="doctorSignUpModalClose">&times;</button>
+            <div class="auth-header">
+                <h2>Doctor Registration</h2>
+                <p>Join our network of medical professionals</p>
+            </div>
+            <form id="doctorSignUpForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="doctorFullName">Doctor Name *</label>
+                        <input type="text" id="doctorFullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorAge">Age *</label>
+                        <input type="number" id="doctorAge" placeholder="Enter your age" min="25" max="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorGender">Gender *</label>
+                        <select id="doctorGender" required>
+                            <option value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorSpecialization">Specialization *</label>
+                        <select id="doctorSpecialization" required>
+                            <option value="">Select specialization</option>
+                            <option value="general">General Medicine</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="ophthalmology">Ophthalmology</option>
+                            <option value="ent">ENT</option>
+                            <option value="psychiatry">Psychiatry</option>
+                            <option value="gynecology">Gynecology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorRegNumber">Medical Registration Number *</label>
+                        <input type="text" id="doctorRegNumber" placeholder="Enter registration number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorRegState">Registration State *</label>
+                        <input type="text" id="doctorRegState" placeholder="Enter registration state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorHospital">Current Practice Hospital *</label>
+                        <input type="text" id="doctorHospital" placeholder="Enter hospital name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorExperience">Years of Experience *</label>
+                        <input type="number" id="doctorExperience" placeholder="Enter years of experience" min="0" max="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorPatients">Total Patients Treated *</label>
+                        <input type="number" id="doctorPatients" placeholder="Enter total patients" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorPhoto">Professional Photo *</label>
+                        <input type="file" id="doctorPhoto" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorCert">Registration Certificate *</label>
+                        <input type="file" id="doctorCert" accept=".pdf,.jpg,.jpeg,.png" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorPassword">Create Password *</label>
+                        <input type="password" id="doctorPassword" placeholder="Create password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit for Approval</button>
+            </form>
+            <p class="auth-info">
+                <i class="fas fa-clock"></i> Your account will be reviewed by admin before activation.
+            </p>
+        </div>
+    </div>
+
+    <!-- Patient Dashboard (Hidden by default - redirecting to patient-dashboard.html) -->
+    <div class="dashboard" id="patientDashboard" style="display: none;">
+        <nav class="dashboard-nav">
+            <div class="dashboard-logo">
+                <i class="fas fa-heartbeat"></i> CURELEX
+            </div>
+            <div class="dashboard-user">
+                <span id="patientGreeting">Hello, Patient</span>
+                <button class="btn btn-secondary" id="patientLogoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </nav>
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Patient Dashboard</h1>
+                <p>Welcome to your health portal</p>
+            </div>
+            <div class="dashboard-grid">
+                <!-- Current Symptoms -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Current Symptoms</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="symptom-entry">
+                            <h4>Fever & Cold</h4>
+                            <p>Reported: <span id="symptomDate">Jan 15, 2024</span></p>
+                            <span class="status status-pending">Under Review</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm" id="addSymptomBtn">
+                            <i class="fas fa-plus"></i> Report New Symptom
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Past Prescriptions -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                        <h3>Past Prescriptions</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="prescription-item">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>General Medicine</p>
+                            <p class="date">Jan 10, 2024</p>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="prescription-item">
+                            <h4>Dr. Amit Patel</h4>
+                            <p>Cardiology</p>
+                            <p class="date">Dec 20, 2023</p>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Past Follow-Ups -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-history"></i>
+                        <h3>Past Follow-Ups</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Follow-up Complete</h4>
+                                    <p>Jan 10, 2024 - Dr. Sarah Johnson</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Initial Consultation</h4>
+                                    <p>Dec 15, 2023 - Dr. Amit Patel</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Follow-up Complete</h4>
+                                    <p>Nov 20, 2023 - Dr. Emily Chen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Current Follow-Up Status -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Current Follow-Up Status</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="followup-status">
+                            <div class="status-progress">
+                                <div class="progress-step active">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Consulted</span>
+                                </div>
+                                <div class="progress-step active">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Prescribed</span>
+                                </div>
+                                <div class="progress-step active">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Follow-up</span>
+                                </div>
+                                <div class="progress-step">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Complete</span>
+                                </div>
+                            </div>
+                            <div class="followup-details">
+                                <p><strong>Doctor:</strong> Dr. Sarah Johnson</p>
+                                <p><strong>Next Visit:</strong> Jan 25, 2024</p>
+                                <p><strong>Status:</strong> Recovery in Progress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-bell"></i>
+            <span id="toastMessage">Notification message</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

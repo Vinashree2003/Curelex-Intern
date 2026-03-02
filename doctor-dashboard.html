@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - CURELEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page doctor-dashboard">
+    <!-- Doctor Dashboard Header -->
+    <header class="dashboard-header-fixed">
+        <div class="header-container">
+            <a href="index.html" class="back-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="header-logo">
+                <i class="fas fa-heartbeat"></i> CURELEX
+            </div>
+            <div class="header-user">
+                <span id="doctorName">Welcome, Doctor</span>
+                <button class="btn btn-secondary btn-sm" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <div class="dashboard-welcome">
+            <h1>Doctor Dashboard</h1>
+            <p>Manage your patients and appointments</p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="stat-info">
+                    <span class="stat-number">45</span>
+                    <span class="stat-label">Total Patients</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar-check"></i>
+                <div class="stat-info">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Today's Appointments</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-user-plus"></i>
+                <div class="stat-info">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">New Patients This Month</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <div class="stat-info">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Patient Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Today's Schedule -->
+            <div class="dashboard-card full-width">
+                <div class="card-header">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Today's Schedule</h3>
+                </div>
+                <div class="card-body">
+                    <div class="schedule-timeline">
+                        <div class="schedule-item completed">
+                            <div class="schedule-time">09:00 AM</div>
+                            <div class="schedule-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Follow-up - General Medicine</p>
+                                <span class="status completed">Completed</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                        </div>
+                        <div class="schedule-item current">
+                            <div class="schedule-time">10:30 AM</div>
+                            <div class="schedule-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Initial Consultation - Cardiology</p>
+                                <span class="status in-progress">In Progress</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Start Consultation</button>
+                        </div>
+                        <div class="schedule-item upcoming">
+                            <div class="schedule-time">11:30 AM</div>
+                            <div class="schedule-info">
+                                <h4>Ahmed Khan</h4>
+                                <p>Follow-up - Neurology</p>
+                                <span class="status upcoming">Upcoming</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                        </div>
+                        <div class="schedule-item upcoming">
+                            <div class="schedule-time">02:00 PM</div>
+                            <div class="schedule-info">
+                                <h4>Sneha Patel</h4>
+                                <p>Initial Consultation - Pediatrics</p>
+                                <span class="status upcoming">Upcoming</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Patients -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-user-injured"></i>
+                    <h3>Recent Patients</h3>
+                </div>
+                <div class="card-body">
+                    <div class="patients-list">
+                        <div class="patient-item">
+                            <div class="patient-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="patient-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Last Visit: Jan 15, 2024</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="patient-item">
+                            <div class="patient-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="patient-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Last Visit: Jan 14, 2024</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="patient-item">
+                            <div class="patient-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="patient-info">
+                                <h4>Ahmed Khan</h4>
+                                <p>Last Visit: Jan 12, 2024</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full" style="margin-top: 1rem;">
+                        <i class="fas fa-users"></i> View All Patients
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pending Prescriptions -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-prescription"></i>
+                    <h3>Pending Prescriptions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="prescription-list">
+                        <div class="prescription-item pending">
+                            <div class="prescription-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="prescription-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Pending since: 10:15 AM</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Write</button>
+                        </div>
+                        <div class="prescription-item pending">
+                            <div class="prescription-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="prescription-info">
+                                <h4>Ahmed Khan</h4>
+                                <p>Pending since: 09:30 AM</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Write</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patient Requests -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>New Patient Requests</h3>
+                </div>
+                <div class="card-body">
+                    <div class="request-list">
+                        <div class="request-item">
+                            <div class="request-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="request-info">
+                                <h4>Ananya Gupta</h4>
+                                <p>General Medicine - New Patient</p>
+                                <span class="request-time">Requested: 30 mins ago</span>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-primary btn-sm"><i class="fas fa-check"></i></button>
+                                <button class="btn btn-outline btn-sm"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="request-item">
+                            <div class="request-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="request-info">
+                                <h4>Vikram Singh</h4>
+                                <p>Cardiology - Follow-up</p>
+                                <span class="request-time">Requested: 1 hour ago</span>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-primary btn-sm"><i class="fas fa-check"></i></button>
+                                <button class="btn btn-outline btn-sm"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor Profile Summary -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Your Profile</h3>
+                </div>
+                <div class="card-body">
+                    <div class="profile-summary">
+                        <div class="profile-avatar-large">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="profile-details">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p class="specialization">General Medicine</p>
+                            <p class="hospital"><i class="fas fa-hospital"></i> City Hospital, Delhi</p>
+                            <div class="profile-stats">
+                                <div>
+                                    <span class="number">15+</span>
+                                    <span class="label">Years Exp.</span>
+                                </div>
+                                <div>
+                                    <span class="number">5000+</span>
+                                    <span class="label">Patients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">
+                        <i class="fas fa-edit"></i> Edit Profile
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-card full-width">
+                <div class="card-header">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Quick Actions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="quick-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-calendar-plus"></i>
+                            <span>Schedule Appointment</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                            <span>Write Prescription</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <span>Create Medical Report</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Message</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-video"></i>
+                            <span>Start Video Call</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>View Analytics</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-bell"></i>
+            <span id="toastMessage">Notification message</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Check if doctor is logged in
+        const currentUser = localStorage.getItem('curelex-current-user');
+        if (!currentUser) {
+            window.location.href = 'index.html';
+        } else {
+            const user = JSON.parse(currentUser);
+            document.getElementById('doctorName').textContent = 'Welcome, Dr. ' + user.fullName;
+        }
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('curelex-current-user');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

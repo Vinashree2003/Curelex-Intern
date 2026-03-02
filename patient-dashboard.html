@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - CURELEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <!-- Patient Dashboard Header -->
+    <header class="dashboard-header-fixed">
+        <div class="header-container">
+            <a href="index.html" class="back-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="header-logo">
+                <i class="fas fa-heartbeat"></i> CURELEX
+            </div>
+            <div class="header-user">
+                <span id="patientName">Welcome, Patient</span>
+                <button class="btn btn-secondary btn-sm" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <div class="dashboard-welcome">
+            <h1>Patient Dashboard</h1>
+            <p>Manage your health records and appointments</p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+            <div class="stat-card">
+                <i class="fas fa-calendar-check"></i>
+                <div class="stat-info">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Upcoming Appointments</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-prescription-bottle"></i>
+                <div class="stat-info">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Prescriptions</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-file-medical"></i>
+                <div class="stat-info">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Medical Reports</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-user-md"></i>
+                <div class="stat-info">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Doctors Consulted</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Current Symptoms -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Current Symptoms</h3>
+                </div>
+                <div class="card-body">
+                    <div class="symptom-item">
+                        <div class="symptom-info">
+                            <h4>Fever & Cold</h4>
+                            <p>Reported: Jan 15, 2024</p>
+                            <span class="badge badge-pending">Under Review</span>
+                        </div>
+                    </div>
+                    <div class="symptom-item">
+                        <div class="symptom-info">
+                            <h4>Headache</h4>
+                            <p>Reported: Jan 14, 2024</p>
+                            <span class="badge badge-resolved">Resolved</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">
+                        <i class="fas fa-plus"></i> Report New Symptom
+                    </button>
+                </div>
+            </div>
+
+            <!-- Past Prescriptions -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <h3>Past Prescriptions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="prescription-list">
+                        <div class="prescription-item">
+                            <div class="prescription-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="prescription-info">
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p>General Medicine</p>
+                                <span class="date">Jan 10, 2024</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="prescription-item">
+                            <div class="prescription-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="prescription-info">
+                                <h4>Dr. Amit Patel</h4>
+                                <p>Cardiology</p>
+                                <span class="date">Dec 20, 2023</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="prescription-item">
+                            <div class="prescription-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="prescription-info">
+                                <h4>Dr. Emily Chen</h4>
+                                <p>Neurology</p>
+                                <span class="date">Nov 15, 2023</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Appointments -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Upcoming Appointments</h3>
+                </div>
+                <div class="card-body">
+                    <div class="appointment-item">
+                        <div class="appointment-date">
+                            <span class="day">25</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <div class="appointment-info">
+                            <h4>Follow-up Visit</h4>
+                            <p>Dr. Sarah Johnson - 10:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="appointment-item">
+                        <div class="appointment-date">
+                            <span class="day">02</span>
+                            <span class="month">Feb</span>
+                        </div>
+                        <div class="appointment-info">
+                            <h4>Cardiology Checkup</h4>
+                            <p>Dr. Amit Patel - 11:30 AM</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full">
+                        <i class="fas fa-plus"></i> Book Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Past Follow-Ups Timeline -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <i class="fas fa-history"></i>
+                    <h3>Follow-Up History</h3>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-content">
+                                <h4>Follow-up Complete</h4>
+                                <p>Jan 10, 2024</p>
+                                <span class="doctor-name">Dr. Sarah Johnson</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-content">
+                                <h4>Initial Consultation</h4>
+                                <p>Dec 15, 2023</p>
+                                <span class="doctor-name">Dr. Amit Patel</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-content">
+                                <h4>Follow-up Complete</h4>
+                                <p>Nov 20, 2023</p>
+                                <span class="doctor-name">Dr. Emily Chen</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot active"></div>
+                            <div class="timeline-content">
+                                <h4>Initial Consultation</h4>
+                                <p>Oct 05, 2023</p>
+                                <span class="doctor-name">Dr. Sarah Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Follow-Up Status -->
+            <div class="dashboard-card full-width">
+                <div class="card-header">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Current Follow-Up Status</h3>
+                </div>
+                <div class="card-body">
+                    <div class="followup-status">
+                        <div class="status-progress">
+                            <div class="progress-step active">
+                                <div class="step-icon"><i class="fas fa-check"></i></div>
+                                <span>Consulted</span>
+                            </div>
+                            <div class="progress-step active">
+                                <div class="step-icon"><i class="fas fa-check"></i></div>
+                                <span>Prescribed</span>
+                            </div>
+                            <div class="progress-step active">
+                                <div class="step-icon"><i class="fas fa-circle"></i></div>
+                                <span>In Treatment</span>
+                            </div>
+                            <div class="progress-step">
+                                <div class="step-icon"><i class="fas fa-circle"></i></div>
+                                <span>Complete</span>
+                            </div>
+                        </div>
+                        <div class="followup-details">
+                            <div class="detail-item">
+                                <i class="fas fa-user-md"></i>
+                                <div>
+                                    <strong>Doctor:</strong> Dr. Sarah Johnson
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Next Visit:</strong> January 25, 2024
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <div>
+                                    <strong>Status:</strong> Recovery in Progress
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-pills"></i>
+                                <div>
+                                    <strong>Medications:</strong> 3 prescribed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical Records -->
+            <div class="dashboard-card full-width">
+                <div class="card-header">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Medical Records</h3>
+                </div>
+                <div class="card-body">
+                    <div class="records-grid">
+                        <div class="record-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Blood Test Report</h4>
+                                <p>Jan 10, 2024</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download</button>
+                        </div>
+                        <div class="record-item">
+                            <i class="fas fa-file-image"></i>
+                            <div>
+                                <h4>X-Ray Chest</h4>
+                                <p>Dec 20, 2023</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download</button>
+                        </div>
+                        <div class="record-item">
+                            <i class="fas fa-file-alt"></i>
+                            <div>
+                                <h4>ECG Report</h4>
+                                <p>Nov 15, 2023</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download</button>
+                        </div>
+                        <div class="record-item">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <div>
+                                <h4>Health Certificate</h4>
+                                <p>Oct 05, 2023</p>
+                            </div>
+                            <button class="btn btn-outline btn-sm">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-bell"></i>
+            <span id="toastMessage">Notification message</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Check if user is logged in
+        const currentUser = localStorage.getItem('curelex-current-user');
+        if (!currentUser) {
+            window.location.href = 'index.html';
+        } else {
+            const user = JSON.parse(currentUser);
+            document.getElementById('patientName').textContent = 'Welcome, ' + user.fullName;
+        }
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('curelex-current-user');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
